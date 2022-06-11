@@ -1,0 +1,23 @@
+/*===== BACK TO TOP =====*/
+.back-to-top {
+    font-size: 20px;
+    color: #121212;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    background-color: #38f9d7;
+    text-align: center;
+    z-index: 99;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    display: none; }
+    .back-to-top:hover {
+      color: #121212;
+      background-color: #38f9d7; }

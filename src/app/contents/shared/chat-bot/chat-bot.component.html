@@ -1,0 +1,81 @@
+<!--button-->
+<div id="chat-circle" class="btn btn-raised">
+    <div id="chat-overlay"></div>
+    <!--<i class="material-icons">android</i>-->
+    <img class="chat-circle_robot"  src="../../../../assets/images/logo2.svg">
+</div>
+
+<!--chat-bot-->
+<div class="chat-box">
+    <div class="chat-box-body">
+        <!--welcome message-->
+        <div class="chat-box-welcome__header">
+            <div class="chat-box__header-text">
+                <p class="chat-box-welcome__company-name">ChatBot</p>
+                <span class="chat-box-toggle"><i class="material-icons">cancel</i></span>
+            </div>
+
+            <div id="chat-box-welcome__ava">
+                <!-- <i class="material-icons">android</i> -->
+                <img class="chat-box-welcome_robot"
+                    src="../../../../assets/images/logo2.svg">
+            </div>
+            <div class="chat-box-welcome__welcome-text">
+                <p>¡Hola! Soy ChatBot INEA, ¿en qué puedo ayudarlo?</p>
+            </div>
+            <!--<div id="chat">
+
+                    </div>-->
+        </div>
+
+
+
+
+        <!--chat-bot after welcome was toggled-->
+        <div id="chat-box__wraper">
+            <div class="chat-box-header">
+                ChatBot
+                <span class="chat-box-toggle"><i class="material-icons">cancel</i></span>
+            </div>
+
+
+
+            <div class="chat-box-overlay">
+            </div>
+            <div class="chat-logs">
+                <div id="cm-msg-0" class="chat-msg bot">
+                    <span class="msg-avatar">
+                        <!--<i class="material-icons">android</i>-->
+                        <img class="chat-box-overlay_robot"
+                            src="../../../../assets/images/logo2.svg">
+                    </span>
+                    <div class="cm-msg-text">
+                        ¡Hola! Soy ChatBot IDA, ¿en qué puedo ayudarlo?
+                    </div>
+                </div>
+                <!-- <div class="text-center"><p>loader 1</p><div class="loader1"></div></div> -->
+                <div class="spin-container">
+                    <div class="spiner">
+                        <div aria-hidden="true"></div>
+                        <div aria-hidden="true"></div>
+                        <div aria-hidden="true"></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!--chat-log-->
+        </div>
+
+    </div>
+    <div class="chat-input-box" id="chatLog">
+        <form class="chat-input__form">
+            <input type="text" class="chat-input__text" id="chat-input__text" placeholder="Enviar un mensaje..." />
+            <button type="submit" autocomplete="off" class="chat-submit" id="chat-submit">
+                <i class="material-icons">send</i>
+            </button>
+        </form>
+        <p class="chat-box__sign">powered by Code-Epic Technologies</p>
+    </div>
+</div>
