@@ -347,6 +347,16 @@ body {
     position: relative;
 }
 
+.chat-msg.bot>.msg-avatar-client {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    float: right;
+    width: 15%;
+    padding: 9px;
+    position: relative;
+}
+
 
 /*.chat-msg.bot>.msg-avatar .material-icons {
     color: #fff;
@@ -374,6 +384,18 @@ body {
     color: #666;
     max-width: 75%;
     float: left;
+    margin-left: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.cm-msg-text-client {
+    background: white;
+    padding: 10px 15px 10px 15px;
+    color: #666;
+    max-width: 75%;
+    float: right;
     margin-left: 10px;
     position: relative;
     margin-bottom: 20px;
@@ -428,7 +450,7 @@ body {
     /* margin-left: 45%; */
     position: absolute;
     /* margin-bottom: 20px; */
-    display: none;
+    // display: none;
 }
 
 .spiner {

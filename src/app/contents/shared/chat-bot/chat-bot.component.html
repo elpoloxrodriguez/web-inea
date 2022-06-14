@@ -1,12 +1,11 @@
 <!--button-->
 <div id="chat-circle" class="btn btn-raised">
     <div id="chat-overlay"></div>
-    <!--<i class="material-icons">android</i>-->
-    <img class="chat-circle_robot"  src="../../../../assets/images/logo2.svg">
+    <img class="chat-circle_robot" src="../../../../assets/images/logo2.svg">
 </div>
 
 <!--chat-bot-->
-<div class="chat-box">
+<div class="chat-box" style="position: auto; z-index: 1200;">
     <div class="chat-box-body">
         <!--welcome message-->
         <div class="chat-box-welcome__header">
@@ -17,15 +16,11 @@
 
             <div id="chat-box-welcome__ava">
                 <!-- <i class="material-icons">android</i> -->
-                <img class="chat-box-welcome_robot"
-                    src="../../../../assets/images/logo2.svg">
+                <img class="chat-box-welcome_robot" src="../../../../assets/images/logo2.svg">
             </div>
             <div class="chat-box-welcome__welcome-text">
                 <p>¡Hola! Soy ChatBot INEA, ¿en qué puedo ayudarlo?</p>
             </div>
-            <!--<div id="chat">
-
-                    </div>-->
         </div>
 
 
@@ -43,18 +38,37 @@
             <div class="chat-box-overlay">
             </div>
             <div class="chat-logs">
-                <div id="cm-msg-0" class="chat-msg bot">
+                <div id="cm-msg-0" style="padding: 2px;" class="chat-msg bot">
                     <span class="msg-avatar">
-                        <!--<i class="material-icons">android</i>-->
-                        <img class="chat-box-overlay_robot"
-                            src="../../../../assets/images/logo2.svg">
+                        <img class="chat-box-overlay_robot" src="../../../../assets/images/logo2.svg">
                     </span>
                     <div class="cm-msg-text">
-                        ¡Hola! Soy ChatBot IDA, ¿en qué puedo ayudarlo?
+                        ¡Hola! Soy ChatBot INEA, ¿en qué puedo ayudarlo?
                     </div>
                 </div>
+
+                <div class="" *ngFor="let item of client">
+                    <div  class="chat-msg bot">
+                        <span class="msg-avatar-client">
+                            <img class="" src="../../../../assets/images/avatar.png">
+                        </span>
+                        <div class="cm-msg-text-client">
+                            {{ item.preg }}
+                        </div>
+                    </div>
+
+                    <div class="chat-msg bot">
+                        <span class="msg-avatar">
+                            <img class="chat-box-overlay_robot" src="../../../../assets/images/logo2.svg">
+                        </span>
+                        <div class="cm-msg-text">
+                            {{ item.resp }}
+                        </div>
+                    </div>
+                </div>
+
                 <!-- <div class="text-center"><p>loader 1</p><div class="loader1"></div></div> -->
-                <div class="spin-container">
+                <div class="spin-container" *ngIf="hidden">
                     <div class="spiner">
                         <div aria-hidden="true"></div>
                         <div aria-hidden="true"></div>
@@ -69,10 +83,11 @@
         </div>
 
     </div>
-    <div class="chat-input-box" id="chatLog">
+    <div class="chat-input-box">
         <form class="chat-input__form">
-            <input type="text" class="chat-input__text" id="chat-input__text" placeholder="Enviar un mensaje..." />
-            <button type="submit" autocomplete="off" class="chat-submit" id="chat-submit">
+            <input type="text" autocomplete="off" [(ngModel)]="msj" [ngModelOptions]="{standalone: true}" required class="chat-input__text"
+                id="chat-input__text" placeholder="Enviar un mensaje..." />
+            <button (click)="ChatBot()" class="chat-submit" id="chat-submit">
                 <i class="material-icons">send</i>
             </button>
         </form>
