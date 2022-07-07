@@ -307,8 +307,7 @@ p {
   background: -webkit-linear-gradient(left, #43cae9 0%, #38f9d7 100%);
   background: -o-linear-gradient(left, #43cae9 0%, #38f9d7 100%);
   background: linear-gradient(to right, #43cae9 0%, #38f9d7 100%);
-  /* padding: 0px 0; */
-  padding: 0px 0;
+  padding: 10px 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -319,12 +318,9 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; }
-  
-  /* .navbar-area .navbar-brand img {
-    max-width: 150px;
-   } */
-  
-   @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-area .navbar-brand img {
+    max-width: 150px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar-area {
       padding: 10px 0; } }
   @media (max-width: 767px) {
@@ -334,7 +330,7 @@ p {
     position: relative;
     padding: 0; }
     .navbar-area .navbar .navbar-toggler .toggler-icon {
-      width: 10px;
+      width: 30px;
       height: 2px;
       background-color: #121212;
       margin: 5px 0;
@@ -351,7 +347,7 @@ p {
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg);
-      top: 70px; }
+      top: 7px; }
     .navbar-area .navbar .navbar-toggler.active .toggler-icon:nth-of-type(2) {
       opacity: 0; }
     .navbar-area .navbar .navbar-toggler.active .toggler-icon:nth-of-type(3) {
@@ -708,6 +704,7 @@ p {
     -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     padding: 5px 0; }
+
 
 .sidebar-right {
   position: fixed;
