@@ -2,8 +2,8 @@
     padding:0px;
     margin:0px;
     position:fixed;
-    right:-140px;
-    top:160px;
+    right:-160px;
+    top:120px;
     width:210px;
     z-index: 1100;
 }
@@ -39,4 +39,16 @@
 }
 .sticky li p a:hover{
     text-decoration:underline;
+}
+
+.social{
+    background-color: #38f9d7;
+    width:40px;
+    height:40px;
+    border-radius:50px;
+}
+
+.alinear{
+    padding-top:12px;
+    padding-left: 12px;
 }
