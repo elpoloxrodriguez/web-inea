@@ -9,6 +9,10 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- ===== iconos Font Awesome ========= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!--====== Line Icons css ======-->
     <link rel="stylesheet" href="./assets/css/LineIcons.css">
     <!--====== Magnific Popup css ======-->
@@ -39,7 +43,7 @@
 <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
 <!--====== Bootstrap js ======-->
 <script src="./assets/js/bootstrap.min.js"></script>
-<script src="./assets/js/popper.min.js"></script>
+<!-- <script src="./assets/js/popper.min.js"></script> -->
 <!--====== Slick js ======-->
 <script src="./assets/js/slick.min.js"></script>
 <!--====== Isotope js ======-->
@@ -58,6 +62,7 @@
 
 <!-- ===== chat bot -->
 <script>
+
 
     var botController = (function () {})();
     var uiController = (function () {})();
@@ -107,8 +112,8 @@
             $chatCircle.on("click", hideCircle);
             $chatBoxClose.on("click", chatBoxCl);
             $chatInput.on("click", chatOpenMessage);
-            $submitBtn.on("click", chatSbmBtn);
-            $chatInput.on("keypress", chatSbmBtn);
+            // $submitBtn.on("click", chatSbmBtn);
+            // $chatInput.on("keypress", chatSbmBtn);
         }
         return {
             init: init

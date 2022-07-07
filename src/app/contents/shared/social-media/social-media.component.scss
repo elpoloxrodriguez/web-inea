@@ -9,7 +9,6 @@
 }
 .sticky li{
     list-style-type:none;
-    // background-color:#fff;
     color:#efefef;
     height:43px;
     padding:0px;
@@ -21,7 +20,7 @@
     cursor:pointer;
 }
 .sticky li:hover{
-    margin-left:-15px;
+    margin-left:-10px;
 }
 .sticky li img{
     float:left;

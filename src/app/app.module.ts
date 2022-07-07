@@ -16,6 +16,7 @@ import { NewsComponent } from './contents/shared/news/news.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SystemOnlineComponent } from './contents/shared/system-online/system-online.component';
 import { RadioComponent } from './contents/shared/radio/radio.component';
+import { DetailsComponent } from './contents/shared/news/details/details.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { RadioComponent } from './contents/shared/radio/radio.component';
     NewsComponent,
     SystemOnlineComponent,
     RadioComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
