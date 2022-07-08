@@ -18,3 +18,135 @@ input {
     // z-index: 2500;
     margin-top: -180px;
     }
+
+
+
+    /*===== SLIDER ONE =====*/
+.slider-area {
+   padding-top: 94px; }
+   .slider-area .bd-example .carousel .carousel-inner {
+     background-color: #38f9d7; }
+     .slider-area .bd-example .carousel .carousel-inner .carousel-item {
+       height: 700px; }
+       @media only screen and (min-width: 992px) and (max-width: 1199px) {
+         .slider-area .bd-example .carousel .carousel-inner .carousel-item {
+           height: 600px; } }
+       @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .slider-area .bd-example .carousel .carousel-inner .carousel-item {
+           height: 600px; } }
+       @media (max-width: 767px) {
+         .slider-area .bd-example .carousel .carousel-inner .carousel-item {
+           height: 400px; } }
+       .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption {
+         top: 50%;
+         bottom: auto;
+         -webkit-transform: translateY(-50%);
+         -moz-transform: translateY(-50%);
+         -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+         transform: translateY(-50%);
+         width: 100%;
+         left: 0; }
+         .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-title {
+           font-size: 44px;
+           font-weight: 700;
+           color: #fff;
+           margin-top: -200px; /* aqui se sube o baja los servicios */
+           line-height: 55px; }
+           @media (max-width: 767px) {
+             .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-title {
+               font-size: 24px;
+               line-height: 32px; } }
+         .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li {
+           display: inline-block;
+           margin: 16px 8px 0; }
+           @media (max-width: 767px) {
+             .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li {
+               margin: 16px 3px 0; } }
+           .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li a.rounded-three {
+             border: 0; }
+           .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li a.rounded-one {
+             border-color: #fff;
+             color: #fff; }
+             .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li a.rounded-one:hover {
+               background-color: rgba(255, 255, 255, 0.3); }
+   .slider-area .bd-example .carousel .carousel-control-prev, .slider-area .bd-example .carousel .carousel-control-next {
+     top: 50%;
+     width: auto;
+     height: auto;
+     font-size: 70px;
+     color: #fff;
+     -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     -o-transform: translateY(-50%);
+     transform: translateY(-50%);
+     bottom: auto;
+     left: 0px;
+     opacity: 0;
+     z-index: 99;
+     -webkit-transition: all 0.3s ease-out 0s;
+     -moz-transition: all 0.3s ease-out 0s;
+     -ms-transition: all 0.3s ease-out 0s;
+     -o-transition: all 0.3s ease-out 0s;
+     transition: all 0.3s ease-out 0s; }
+     @media only screen and (min-width: 992px) and (max-width: 1199px) {
+       .slider-area .bd-example .carousel .carousel-control-prev, .slider-area .bd-example .carousel .carousel-control-next {
+         left: 30px;
+         font-size: 50px; } }
+     @media only screen and (min-width: 768px) and (max-width: 991px) {
+       .slider-area .bd-example .carousel .carousel-control-prev, .slider-area .bd-example .carousel .carousel-control-next {
+         left: 30px;
+         font-size: 50px; } }
+     @media (max-width: 767px) {
+       .slider-area .bd-example .carousel .carousel-control-prev, .slider-area .bd-example .carousel .carousel-control-next {
+         left: 20px;
+         font-size: 20px; } }
+     @media only screen and (min-width: 576px) and (max-width: 767px) {
+       .slider-area .bd-example .carousel .carousel-control-prev, .slider-area .bd-example .carousel .carousel-control-next {
+         font-size: 34px; } }
+   .slider-area .bd-example .carousel .carousel-control-next {
+     right: 0px;
+     left: auto; }
+     @media only screen and (min-width: 992px) and (max-width: 1199px) {
+       .slider-area .bd-example .carousel .carousel-control-next {
+         right: 40px; } }
+     @media only screen and (min-width: 768px) and (max-width: 991px) {
+       .slider-area .bd-example .carousel .carousel-control-next {
+         right: 40px; } }
+     @media (max-width: 767px) {
+       .slider-area .bd-example .carousel .carousel-control-next {
+         right: 20px; } }
+   .slider-area .bd-example .carousel .carousel-indicators {
+     margin-bottom: 20px; }
+     .slider-area .bd-example .carousel .carousel-indicators li {
+       width: 8px;
+       height: 8px;
+       background-color: rgba(255, 255, 255, 0.3);
+       border-radius: 50px;
+       border: 0; }
+       .slider-area .bd-example .carousel .carousel-indicators li.active {
+         width: 16px;
+         background-color: #fff;
+         border-radius: 5px; }
+   .slider-area .bd-example .carousel:hover .carousel-control-prev {
+     left: 70px;
+     opacity: 1; }
+   .slider-area .bd-example .carousel:hover .carousel-control-next {
+     right: 70px;
+     opacity: 1; }
+ 
+ .slider-3 {
+   padding-top: 0px; }
+   .slider-3 .bd-example .carousel .carousel-inner .carousel-item {
+     height: 850px; }
+     @media only screen and (min-width: 768px) and (max-width: 991px) {
+       .slider-3 .bd-example .carousel .carousel-inner .carousel-item {
+         height: 650px; } }
+     @media (max-width: 767px) {
+       .slider-3 .bd-example .carousel .carousel-inner .carousel-item {
+         height: 550px; } }
+     @media only screen and (min-width: 576px) and (max-width: 767px) {
+       .slider-3 .bd-example .carousel .carousel-inner .carousel-item {
+         height: 650px; } }
+ 

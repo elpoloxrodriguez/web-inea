@@ -9,24 +9,24 @@ export class SocialMediaComponent implements OnInit {
 
   ListaSocial = [
     {
-      icon: '',
-      url: '',
-      title: 'twitter'
+      icon: 'lni-twitter-original',
+      url: '#',
+      title: 'twitter',
     },
     {
-      icon: '',
-      url: '',
-      title: 'instagram'
+      icon: 'lni-instagram-original',
+      url: '#',
+      title: 'instagram',
     },
     {
-      icon: '',
-      url: '',
-      title: 'facebook'
+      icon: 'lni-facebook-filled',
+      url: '#',
+      title: 'facebook',
     },
     {
-      icon: '',
-      url: '',
-      title: 'youtube'
+      icon: 'lni-youtube',
+      url: '#',
+      title: 'youtube',
     }
   ]
   constructor() { }

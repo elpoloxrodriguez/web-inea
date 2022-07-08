@@ -69,31 +69,12 @@
                     </div> <!-- carousel-item -->
                 </div> <!-- carousel-inner -->
 
-                
                 <div class="container">
                 <div class="row">
-                    <div class="col-6 col-md-3 col-sm-6">
+                    <div class="col-6 col-md-3 col-sm-6" *ngFor="let item of ListaIndicadores">
                         <div class="cuadrado" align="center">
-                            <h2 style="color:#fff">8.564</h2>
-                            <p style="color:#fff">Buques Abanderados<br><br></p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-sm-6">
-                        <div class="cuadrado" align="center">
-                            <h2 style="color:#fff">59.687</h2>
-                            <p style="color:#fff">Documentación técnica emitida a la Gente de Mar</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-sm-6">
-                        <div class="cuadrado" align="center">
-                            <h2 style="color:#fff">3.412</h2>
-                            <p style="color:#fff">Inspecciones realizadas a instalaciones portuarias</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 col-sm-6">
-                        <div class="cuadrado" align="center">
-                            <h2 style="color:#fff">936</h2>
-                            <p style="color:#fff">Charlas de conciencia acuática impartidas</p>
+                            <h2 style="color:#fff">{{ item.cantidad }}</h2>
+                            <p style="color:#fff">{{ item.title }}</p>
                         </div>
                     </div>
                 </div>

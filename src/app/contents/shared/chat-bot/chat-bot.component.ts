@@ -19,6 +19,8 @@ export class ChatBotComponent implements OnInit {
     funcion: '',
     parametros: ''
   }
+
+  public status = false
   public msj: any
   public preg: any
   public hidden = false
@@ -29,8 +31,9 @@ export class ChatBotComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.status = true
   }
-
+  
   ChatBot() {
     this.msjAux = this.msj
     this.msj = ''
@@ -51,7 +54,9 @@ export class ChatBotComponent implements OnInit {
           this.hidden = false
         },
         error => {
-          console.log(error);
+          // console.log(error);
+          this.client.push({ resp: 'Problemas con Sandra Server, porfavor contacte al administrador!', preg: this.msjAux })
+          this.hidden = false
         }
       )
   }

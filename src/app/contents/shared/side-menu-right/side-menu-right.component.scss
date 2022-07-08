@@ -1,0 +1,79 @@
+.sidebar-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f4f6f7;
+    height: 100%;
+    width: 300px;
+    padding-top: 80px;
+    z-index: 9999;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+  
+  .sidebar-content .sidebar-logo img{width: 50%;}
+  
+    .sidebar-right.open {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0); }
+    @media (max-width: 767px) {
+      .sidebar-right {
+        width: 250px; } }
+    .sidebar-right .sidebar-close {
+      position: absolute;
+      top: 30px;
+      left: 30px; }
+      .sidebar-right .sidebar-close .close {
+        font-size: 24px;
+        color: #121212; }
+    .sidebar-right .sidebar-content .sidebar-menu {
+      margin-top: 40px; }
+      .sidebar-right .sidebar-content .sidebar-menu ul li a {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        padding: 11px 16px;
+        color: #121212;
+        text-transform: uppercase;
+        position: relative;
+        border-radius: 5px;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        border-bottom: 1px solid #cbced1;
+        display: block; }
+        .sidebar-right .sidebar-content .sidebar-menu ul li a:hover {
+          color: #38f9d7; }
+    .sidebar-right .sidebar-content .sidebar-social {
+      margin-top: 30px; }
+      .sidebar-right .sidebar-content .sidebar-social span {
+        font-size: 16px;
+        line-height: 24px;
+        color: #6c6c6c;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-right: 14px; }
+      .sidebar-right .sidebar-content .sidebar-social ul li {
+        display: inline-block;
+        margin-right: 5px; }
+        .sidebar-right .sidebar-content .sidebar-social ul li a {
+          font-size: 32px;
+          color: #38f9d7;
+          -webkit-transition: all 0.3s ease-out 0s;
+          -moz-transition: all 0.3s ease-out 0s;
+          -ms-transition: all 0.3s ease-out 0s;
+          -o-transition: all 0.3s ease-out 0s;
+          transition: all 0.3s ease-out 0s; }
+  

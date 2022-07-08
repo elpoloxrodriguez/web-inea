@@ -23,10 +23,7 @@
     </ul> -->
 
     <ul class="sticky">
-        <li><a href="https://twitter.com/" target="_blank" style="color: #fff;text-decoration: none;" class="social"><i class="lni-twitter-original alinear"></i></a></li>
-        <li><a href="https://instagram.com/" target="_blank" style="color: #fff;text-decoration: none;" class="social"><i class="lni-instagram-original alinear"></i></a></li>
-        <li><a href="https://facebook.com/" target="_blank" style="color: #fff;text-decoration: none;" class="social"><i class="lni-facebook-filled alinear"></i></a></li>
-        <li><a href="https://youtube.com" target="_blank" style="color: #fff;text-decoration: none;" class="social"><i class="lni-youtube alinear"></i></a></li>
+        <li *ngFor="let item of ListaSocial"><a [href]="item.url" target="_blank" style="color: #fff;text-decoration: none;" class="social"><div class="alinear"><i [class]="item.icon"></i></div></a></li>
     </ul>
 
 </div>
